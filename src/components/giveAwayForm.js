@@ -40,10 +40,10 @@ export function GiveAwayForm() {
   };
 
   return (
-    <Container style={{ marginTop: "30px" }}>
+    <Container>
       <Row>
         <Col>
-          <h2 style={{ marginBottom: "15px" }}>Give Away</h2>
+          <h2 style={{ marginBottom: "15px", marginTop: "15px" }}>Give Away</h2>
         </Col>
       </Row>
       <Row>

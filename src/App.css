@@ -41,6 +41,15 @@
   background-color: #d5e5e9;
 } */
 
+.mainColor {
+  background-color: #d5e5e9;
+}
+
+.formColor {
+  height: 100vh;
+  background-color: #d5e5e9;
+}
+
 .footer {
   height: 100%;
   width: 100%;

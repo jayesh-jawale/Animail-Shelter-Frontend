@@ -1,5 +1,7 @@
 import "./App.css";
 import { AdoptForm } from "./components/adoptForm";
+import { AdoptFormPage } from "./pages/adoptFormPage";
+import { GiveAwayPage } from "./pages/giveAwayPage";
 import { GiveAwayForm } from "./components/giveAwayForm";
 import { AnimalShelter } from "./components/animalShelter";
 import { GetPetByType } from "./components/getPet";
@@ -22,11 +24,11 @@ function App() {
           </Route>
 
           <Route exact path="/adopt">
-            <AdoptForm />
+            <AdoptFormPage />
           </Route>
 
           <Route exact path="/give-away">
-            <GiveAwayForm />
+            <GiveAwayPage />
           </Route>
 
           <Route exact path="/pets-we-have">

@@ -4,7 +4,7 @@ import { Footer } from "../layouts/Footer";
 
 export function AnimalShelter() {
   return (
-    <div>
+    <div className="mainColor">
       <Header />
       <MainSection />
       <Footer />

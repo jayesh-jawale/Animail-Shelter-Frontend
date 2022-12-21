@@ -17,10 +17,11 @@ export function GetPetByTypeDog() {
   }, [dispatch]);
 
   return (
-    <Container style={{ marginTop: "30px" }}>
+    <div className="formColor">
+    <Container>
       <Row>
         <Col>
-          <h2>What all pets do we have ?</h2>
+          <h2 style={{ marginTop: "30px" }}>What all pets do we have ?</h2>
         </Col>
       </Row>
       <Row>
@@ -66,5 +67,6 @@ export function GetPetByTypeDog() {
         </Table>
       </Row>
     </Container>
+    </div>
   );
 }
