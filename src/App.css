@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,187 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+
+/* * {
+  background-color: #d5e5e9;
+} */
+
+.footer {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+span {
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  gap: 50px 140px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  margin: 10px;
+}
+
+.animal {
+  display: flex;
+  gap: 20px
+}
+
+.image1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 165px;
+  margin-bottom: 20px;
+  /* object-fit: fill; */
+}
+
+.image2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 165px;
+  margin-bottom: 20px;
+  /* object-fit: fill; */
+}
+
+.footer-image2 {
+  width: 50px;
+  height: 35px;
+  margin-bottom: 20px;
+  /* object-fit: fill; */
+}
+
+.adoptButton {
+  margin-right: 10px;
+}
+
+.giveAwayButton {
+  margin-bottom: 20px;
+  float: right;
+}
+
+.textRight {
+  float: right;
+}
+
+.animalShelterFooter {
+  display: flex;
+  gap: 20px;
+}
+
+.spanButtons {
+  display: flex;
+  gap: 20px;
+}
+
+.copyright {
+  font-size: small;
+  font-weight: 700;
+}
+
+.footerP {
+  font-size: small;
+  font-weight: 700;
+}
+
+.formClass {
+  width: 60%;
+}
+
+.requestAdoptionButton {
+  float: right;
+}
+
+/* .paraRight {
+  margin-left: 20px;
+} */
+
+@media screen and (max-width: 375px) {
+  .image1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 165px;
+    margin-bottom: 50px;
+    /* object-fit: fill; */
+  }
+
+  .image2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 165px;
+    margin-top: 50px;
+    /* object-fit: fill; */
+  }
+
+  .adoptButton {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  .requestAdoptionButton {
+    float: left;
+    margin-top: 30px;
+  }
+
+  .whatAllPets {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 60px;
+    width: 50%;
+  }
+
+  .giveAwayButton {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-bottom: 40px;
+  }
+
+  .textRight {
+    float: right;
+    margin-top: 80px;
+  }
+
+  .paraRight {
+    margin-bottom: 40px;
+  }
+
+  .animalShelterFooter {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .adoptButtonFooter {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 70%;
+    margin-top: 20px;
   }
 }

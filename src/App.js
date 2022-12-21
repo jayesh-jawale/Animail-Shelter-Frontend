@@ -1,23 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { AdoptForm } from "./components/adoptForm";
+import { GiveAwayForm } from "./components/giveAwayForm";
+import { AnimalShelter } from "./components/animalShelter";
+import { GetPetByType } from "./components/getPet";
+import { GetPetByTypeDog } from "./components/getPetDog";
+import { GetPetByTypeCat } from "./components/getPetCat";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+/>;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <AnimalShelter />
+          </Route>
+
+          <Route exact path="/adopt">
+            <AdoptForm />
+          </Route>
+
+          <Route exact path="/give-away">
+            <GiveAwayForm />
+          </Route>
+
+          <Route exact path="/pets-we-have">
+            <GetPetByType />
+          </Route>
+
+          <Route exact path="/pets-we-have/dog">
+            <GetPetByTypeDog />
+          </Route>
+
+          <Route exact path="/pets-we-have/cat">
+            <GetPetByTypeCat />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
