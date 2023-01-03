@@ -1,8 +1,6 @@
 import "./App.css";
-import { AdoptForm } from "./components/adoptForm";
 import { AdoptFormPage } from "./pages/adoptFormPage";
 import { GiveAwayPage } from "./pages/giveAwayPage";
-import { GiveAwayForm } from "./components/giveAwayForm";
 import { AnimalShelter } from "./components/animalShelter";
 import { GetPetByType } from "./components/getPet";
 import { GetPetByTypeDog } from "./components/getPetDog";
