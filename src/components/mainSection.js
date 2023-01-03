@@ -13,9 +13,10 @@ export function MainSection() {
           <Col style={{ float: "left" }}>
             <h4>Welcome to Animal Shelter !</h4>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever.
+              We all love animals, don't we? Animal shelters have played a vital
+              role in helping out our friends in distress. The next time you see
+              any animal injured, abused or neglected, feel free to contact
+              animal shelters.
             </p>
           </Col>
           <Col>
@@ -58,10 +59,11 @@ export function MainSection() {
         <Row>
           <Col>
             <p className="paraRight">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              Our rescues, admissions, and treatment get listed on our Social
+              media pages on a DAILY BASIS. From 2018 end, we provided FREE
+              treatment to almost 8000 admitted dogs till now. From 2021 we
+              started admitting birds, mainly because there was a huge scarcity
+              of aviary in Pune and many city birds lost their lives.
             </p>
           </Col>
         </Row>
@@ -88,9 +90,11 @@ export function MainSection() {
           </Col>
           <Col>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever.
+              Yes, you heard it right! We are probably the only facility in Pune
+              which is entirely cage-free. We built almost 60ft×25 ft airy
+              kennels where similar natured animals are kept together. They get
+              their freedom too which reduces the stress of being sick & not in
+              their territory considerably.
             </p>
           </Col>
         </Row>

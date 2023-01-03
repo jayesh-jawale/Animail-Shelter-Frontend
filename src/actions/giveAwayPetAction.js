@@ -5,11 +5,13 @@ import {
   giveAwayPetError,
 } from "../slices/giveAwayPetSlice";
 
+const giveAwayPetURL = `${process.env.REACT_APP_API_URL}`;
+
 export const giveAwayPet = (givePetData) => async (dispatch) => {
   dispatch(giveAwayPetPending());
   try {
     const result = await axios.post(
-      `http://localhost:9000/give-pet`,
+      `${giveAwayPetURL}/give-pet`,
       givePetData
     );
     result.data.status === "success"
