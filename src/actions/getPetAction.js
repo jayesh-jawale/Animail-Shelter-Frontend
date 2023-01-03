@@ -5,12 +5,10 @@ import {
   getPetsFail,
 } from "../slices/getPetSlice";
 
-const getPetURL = `${process.env.REACT_APP_API_URL}`;
-
 export const getPet = () => async (dispatch) => {
   dispatch(getPetsLoading());
   try {
-    const result = await axios.get(`${getPetURL}/get-pets`);
+    const result = await axios.get(`${process.env.REACT_APP_API_URL}/get-pets`);
     dispatch(getPetsSuccess(result.data.result));
   } catch (error) {
     dispatch(getPetsFail(error.message));
