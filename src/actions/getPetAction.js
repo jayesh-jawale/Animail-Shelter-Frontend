@@ -5,12 +5,12 @@ import {
   getPetsFail,
 } from "../slices/getPetSlice";
 
-const getPetUrl = `${process.env.REACT_APP_API_URL}`
-
 export const getPet = () => async (dispatch) => {
   dispatch(getPetsLoading());
   try {
-    const result = await axios.get(getPetUrl + "/get-pets");
+    const result = await axios.get(
+      "https://animal-shelter-backend.vercel.app/get-pets"
+    );
     dispatch(getPetsSuccess(result.data.result));
   } catch (error) {
     dispatch(getPetsFail(error.message));

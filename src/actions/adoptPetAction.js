@@ -5,13 +5,11 @@ import {
   adoptPetError,
 } from "../slices/adoptPetSlice";
 
-const adoptPetUrl = `${process.env.REACT_APP_API_URL}`
-
 export const adoptPet = (adoptPetData) => async (dispatch) => {
   dispatch(adoptPetPending());
   try {
     const result = await axios.post(
-      adoptPetUrl + "/adopt-pet",
+      "https://animal-shelter-backend.vercel.app/adopt-pet",
       adoptPetData
     );
     result.data.status === "success"

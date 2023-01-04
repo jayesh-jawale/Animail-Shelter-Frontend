@@ -5,13 +5,11 @@ import {
   giveAwayPetError,
 } from "../slices/giveAwayPetSlice";
 
-const giveAwayPetUrl = `${process.env.REACT_APP_API_URL}`
-
 export const giveAwayPet = (givePetData) => async (dispatch) => {
   dispatch(giveAwayPetPending());
   try {
     const result = await axios.post(
-      giveAwayPetUrl + "/give-pet",
+      "https://animal-shelter-backend.vercel.app/give-pet",
       givePetData
     );
     result.data.status === "success"
